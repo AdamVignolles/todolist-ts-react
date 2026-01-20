@@ -58,6 +58,4 @@ Licence
 - MIT
 
 Contact
-- Projet local — adapter README selon le repo distant et les conventions d'équipe.
-
-(remplacez <repo-url> et ajustez scripts selon package.json)
+- Pour toute question ou contribution, ouvrir une issue ou un PR sur GitHub.
