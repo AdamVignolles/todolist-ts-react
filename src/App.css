@@ -1,0 +1,11 @@
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.stats {
+  margin: 10px 0;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+}
