@@ -1,73 +1,63 @@
-# React + TypeScript + Vite
+# ToDoList 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Description
+- Application ToDo simple construite avec React, TypeScript, Vite et Mantine.
+- But : démontrer une structure moderne, typage strict, composants UI réutilisables et gestion locale de l'état.
 
-Currently, two official plugins are available:
+Fonctionnalités
+- Ajouter / éditer / supprimer des tâches
+- Marquer comme terminé
+- Filtrer (toutes, actives, complétées)
+- Stockage local (localStorage)
+- UI responsive avec Mantine
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Stack technique
+- React 18+
+- TypeScript
+- Vite
+- Mantine (Composants UI)
+- Zustand / Context API (suggestion pour l'état local)
+- ESLint, Prettier (qualité de code)
+- Vitest (tests unitaires optionnels)
 
-## React Compiler
+Prérequis
+- Node.js >= 16
+- npm ou yarn
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Installation
+```bash
+# cloner le dépôt
+git clone <repo-url>
+cd todolist
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# installer les dépendances
+npm install
+# ou
+yarn
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Scripts usuels
+```bash
+npm run dev      # lancer le serveur de dev (Vite)
+npm run build    # builder pour la production
+npm run preview  # prévisualiser le build
+npm run lint     # vérifier le lint
+npm run format   # formater le code
+npm run test     # lancer les tests (si configurés)
 ```
+
+Démarrage rapide
+```bash
+npm install
+npm run dev
+# ouvrir http://localhost:5173
+```
+
+
+Licence
+- MIT
+
+Contact
+- Projet local — adapter README selon le repo distant et les conventions d'équipe.
+
+(remplacez <repo-url> et ajustez scripts selon package.json)
