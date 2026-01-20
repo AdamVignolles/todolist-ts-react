@@ -1,18 +1,18 @@
 # ToDoList 
 
-Description
+## Description
 - Application ToDo simple construite avec React, TypeScript, Vite et Mantine.
 - But : démontrer une structure moderne, typage strict, composants UI réutilisables et gestion locale de l'état.
 
-Fonctionnalités
+## Fonctionnalités
 - Ajouter / éditer / supprimer des tâches
 - Marquer comme terminé
 - Filtrer (toutes, actives, complétées)
 - Stockage local (localStorage)
 - UI responsive avec Mantine
 
-Stack technique
-- React 18+
+## Stack technique
+- React 
 - TypeScript
 - Vite
 - Mantine (Composants UI)
@@ -20,15 +20,15 @@ Stack technique
 - ESLint, Prettier (qualité de code)
 - Vitest (tests unitaires optionnels)
 
-Prérequis
+## Prérequis
 - Node.js >= 16
 - npm ou yarn
 
-Installation
+## Installation
 ```bash
 # cloner le dépôt
-git clone <repo-url>
-cd todolist
+git clone https://github.com/AdamVignolles/todolist-ts-react.git
+cd todolist-ts-react
 
 # installer les dépendances
 npm install
@@ -36,7 +36,7 @@ npm install
 yarn
 ```
 
-Scripts usuels
+## Scripts usuels
 ```bash
 npm run dev      # lancer le serveur de dev (Vite)
 npm run build    # builder pour la production
@@ -46,7 +46,7 @@ npm run format   # formater le code
 npm run test     # lancer les tests (si configurés)
 ```
 
-Démarrage rapide
+## Démarrage rapide
 ```bash
 npm install
 npm run dev
@@ -54,8 +54,8 @@ npm run dev
 ```
 
 
-Licence
+### Licence
 - MIT
 
-Contact
+### Contact
 - Pour toute question ou contribution, ouvrir une issue ou un PR sur GitHub.
